@@ -22,20 +22,21 @@ module.exports = function(grunt) {
       options: {},
       dist: {
         files: {
-          'dist/js/myApp.min.js': ['src/**/*.js']
+          'dist/js/myApp.min.js': ['src/**/*.js', 'node_modules/bootstrap/dist/js/bootstrap.min.js']
         }
       }
     },
     concat: {
       options: {
         process: function(src, filepath) {
-          if(filepath.indexOf('dist/css/compiled/') > -1) {
+          console.log("Concatenating: " + filepath);
+          if(filepath.indexOf('dist/css/compiled/') === 0 || filepath.indexOf('node_modules') === 0 ) {
             return '// Source: ' + filepath + '\n' + src.replace(/\n/g, '');
-          } else { return '';}
+          } else { return ''; }
         }
       },
       dist: {
-        src: ['dist/css/**/*.css'],
+        src: ['dist/css/**/*.css', 'node_modules/bootstrap/dist/css/bootstrap.min.css'],
         dest: 'dist/css/styles.min.css'
       }
     }

@@ -15,12 +15,13 @@
   "license": "GPLv2",
   "dependencies": {
     "angular": "0.0.1",
-    "nw": "*",
+    "bootstrap": "^3.3.5",
     "grunt": "*",
     "grunt-cli": "*",
+    "grunt-contrib-concat": "*",
+    "grunt-contrib-jshint": "*",
     "grunt-contrib-less": "*",
-    "grunt-contrib-jshint":"*",
     "grunt-contrib-uglify": "*",
-    "grunt-contrib-concat": "*"
+    "nw": "*"
   }
 }
