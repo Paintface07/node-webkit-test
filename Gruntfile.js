@@ -39,6 +39,21 @@ module.exports = function(grunt) {
         src: ['dist/css/**/*.css', 'node_modules/bootstrap/dist/css/bootstrap.min.css'],
         dest: 'dist/css/styles.min.css'
       }
+    },
+    jasmine: {
+      tests: {
+        src: 'src/**/*.js',
+        options: {
+          specs: 'test/*Spec.js',
+          helpers: 'test/*Helper.js',
+          vendor: [
+            'node_modules/jquery/dist/jquery.min.js',
+            'node_modules/bootstrap/dist/js/bootstrap.min.js',
+            'node_modules/angular/lib/index.js',
+            'node_modules/angular-mocks/angular-mocks.js'
+          ]
+        }
+      }
     }
   });
 
@@ -48,4 +63,5 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-concat');
+  grunt.loadNpmTasks('grunt-contrib-jasmine');
 };
