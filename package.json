@@ -6,7 +6,8 @@
     "app": "bin/app"
   },
   "scripts": {
-    "start": "nw"
+    "start": "nw",
+    "test": "grunt test"
   },
   "author": {
     "name": "Kevin Kondratuk"

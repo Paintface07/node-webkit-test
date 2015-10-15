@@ -58,6 +58,7 @@ module.exports = function(grunt) {
   });
 
   grunt.registerTask('default', ['less', 'jshint', 'uglify', 'concat']);
+  grunt.registerTask('test', ['jshint']);
 
   grunt.loadNpmTasks('grunt-contrib-less');
   grunt.loadNpmTasks('grunt-contrib-jshint');
