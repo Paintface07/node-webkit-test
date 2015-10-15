@@ -22,6 +22,7 @@
     "grunt-contrib-jshint": "*",
     "grunt-contrib-less": "*",
     "grunt-contrib-uglify": "*",
+    "jquery": "^2.1.4",
     "nw": "*"
   }
 }
