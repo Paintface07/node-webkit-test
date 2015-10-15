@@ -1,0 +1,26 @@
+{
+  "name": "myApp",
+  "version": "0.1.0",
+  "main": "index.html",
+  "bin": {
+    "app": "bin/app"
+  },
+  "scripts": {
+    "start": "nw"
+  },
+  "author": {
+    "name": "Kevin Kondratuk"
+  },
+  "public": false,
+  "license": "GPLv2",
+  "dependencies": {
+    "angular": "0.0.1",
+    "nw": "*",
+    "grunt": "*",
+    "grunt-cli": "*",
+    "grunt-contrib-less": "*",
+    "grunt-contrib-jshint":"*",
+    "grunt-contrib-uglify": "*",
+    "grunt-contrib-concat": "*"
+  }
+}
